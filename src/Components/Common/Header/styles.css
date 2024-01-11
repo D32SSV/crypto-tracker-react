@@ -1,0 +1,54 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  padding: 1.5rem 3rem;
+}
+
+.link {
+  color: bisque;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  padding: 1.5rem 3rem;
+}
+
+.link:hover {
+  color: var(--white);
+  transition: all 0.3s;
+}
+.drawer {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .links {
+    display: none;
+  }
+  .drawer {
+    display: block;
+    padding: 1.5rem;
+    /* position: absolute; */
+  }
+  .toggledDrawer {
+    padding: 0.8rem;
+    background-color: var(--black);
+    width: 20vw;
+    height: 100vh;
+  }
+}

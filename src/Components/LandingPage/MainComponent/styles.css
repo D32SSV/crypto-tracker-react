@@ -1,0 +1,179 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.7rem 3rem;
+  /* width: 100vw; */
+  /* height: 70vh; */
+  margin: auto;
+}
+
+.crypto,
+.realtime {
+  font-size: 6rem;
+  margin: 0;
+}
+
+.crypto {
+  color: #fff;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #fff;
+}
+
+.crypto:hover {
+  color: var(--black);
+  -webkit-text-stroke-color: #fff;
+  transition: all 0.2s;
+}
+
+.realtime {
+  color: var(--blue);
+}
+
+.text {
+  color: bisque;
+  font-size: 1.2rem;
+}
+
+.btnDiv {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.rightdiv {
+  width: 50%;
+  position: relative;
+  padding: 4rem;
+}
+
+.iphone {
+  position: absolute;
+  z-index: 10;
+  min-width: 200px;
+  width: 35%;
+  right: 0;
+  height: 80vh;
+}
+.grad {
+  position: absolute;
+  min-width: 176px;
+  width: 35%;
+  top: 5.5rem;
+  right: 0;
+  height: 70vh;
+}
+
+@media only screen and (max-width: 1200px) {
+  .crypto,
+  .realtime {
+    font-size: 4rem;
+    margin: 0;
+  }
+  .text {
+    font-size: 1rem;
+  }
+  .iphone {
+    min-width: 250px;
+  }
+  .grad {
+    min-width: 126px;
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 840px) {
+  .crypto,
+  .realtime {
+    font-size: 3rem;
+    margin: 0;
+  }
+  .crypto {
+    -webkit-text-stroke-width: 1px;
+  }
+  .text {
+    font-size: 0.85rem;
+  }
+  .iphone {
+    min-width: 250px;
+  }
+  .grad {
+    min-width: 226px;
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .crypto,
+  .realtime {
+    font-size: 3rem;
+    margin: 0;
+  }
+  .crypto {
+    -webkit-text-stroke-width: 1px;
+  }
+  .text {
+    font-size: 0.85rem;
+  }
+  .iphone {
+    min-width: 250px;
+  }
+  .grad {
+    min-width: 225px;
+    width: 40%;
+  }
+  .leftdiv {
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .crypto,
+  .realtime {
+    font-size: 3rem;
+    margin: 0;
+  }
+  .text {
+    font-size: 1rem;
+  }
+
+  .rightdiv {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .crypto,
+  .realtime {
+    font-size: 3rem;
+    margin: 0;
+  }
+  .leftdiv {
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .iphone {
+    min-width: 200px;
+  }
+  .grad {
+    min-width: 175px;
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .iphone {
+    min-width: 250px;
+  }
+  .grad {
+    min-width: 200px;
+    width: 40%;
+  }
+}
