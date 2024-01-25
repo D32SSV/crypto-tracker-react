@@ -87,3 +87,12 @@ img {
 html{
   scroll-behavior: smooth;
 }
+
+.coin_wrapper{
+  display: block;
+  width: 90%;
+  background-color: var(--darkgrey);
+  border-radius: 0.8rem;
+  margin: 1.5rem auto;
+  /* padding: 0 1.5rem; */
+}
