@@ -1,13 +1,20 @@
-// import { useState } from "react";
-import Header from "./Components/Common/Header";
 import "./App.css";
-import MainComponent from "./Components/LandingPage/MainComponent";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./pages/Home";
+import DashboardPage from "./pages/Dashboard";
 
 function App() {
   return (
     <>
-      <Header />
-      <MainComponent/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/dashboard" element={<DashboardPage />} />
+          {/* <Route path="/coin/:id" element={<CoinPage />} />
+          <Route path="/compare" element={<ComparePage />} />
+          <Route path="/watchlist" element={<WatchlistPage />} /> */}
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

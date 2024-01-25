@@ -3,7 +3,7 @@
   line-height: 1.5;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #0b0b0b;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -12,8 +12,9 @@
   --red: #ce1e1e;
   --blue: #1655dd;
   --pink: #f2298d;
-  --black: #111;
+  --black: #191A1B;
   --white: bisque;
+  --darkgrey: #1b1b1b;
 }
 
 
@@ -73,3 +74,16 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+
+img {  
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+html{
+  scroll-behavior: smooth;
+}

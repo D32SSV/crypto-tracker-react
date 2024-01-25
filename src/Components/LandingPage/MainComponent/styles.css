@@ -149,6 +149,9 @@
 }
 
 @media only screen and (max-width: 375px) {
+  .container {
+    padding: 1.25rem 0;
+  }
   .crypto,
   .realtime {
     font-size: 3rem;
@@ -169,11 +172,20 @@
 }
 
 @media only screen and (max-width: 320px) {
+  .container {
+    padding: 1.25rem 0 1.25rem 1.5rem;
+  }
   .iphone {
     min-width: 250px;
   }
   .grad {
     min-width: 200px;
     width: 40%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  Button {
+    padding: 1.5rem 0 !important;
   }
 }

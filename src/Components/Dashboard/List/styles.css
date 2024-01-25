@@ -1,0 +1,87 @@
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  /* margin: 2rem 1.5rem; */
+  padding: 1rem;
+}
+
+.row:hover {
+  background-color: var(--darkgrey);
+  border-radius: 1rem;
+  transition: all 0.3s;
+}
+
+.row td {
+  text-align: left;
+  width: 18%;
+}
+
+.td_image {
+  width: 3rem !important;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.profit:hover {
+  border: 2px solid greenyellow !important;
+  transition: all 0.3s;
+}
+
+.loss:hover {
+  border: 2px solid var(--red) !important;
+  transition: all 0.3s;
+}
+
+.coin_price_center_align {
+  text-align: center;
+}
+
+.right_align {
+  text-align: right;
+}
+
+.mobile_td {
+  display: none;
+}
+
+@media only screen and (max-width: 1300px) {
+  .trending {
+    display: none;
+  }
+  .desktop_td {
+    display: none;
+  }
+  .mobile_td {
+    display: block;
+  }
+}
+
+@media only screen and (max-width:875px){
+    .totalVolList{
+        display: none;
+    }
+    *{
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width:710px){
+    .totalCapList{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:550px){
+    *{
+        font-size: 0.6rem;
+    }
+    .nameNSymbol{
+        display: none;
+    }
+    .row{
+        padding: 0.5rem;
+        /* width: 50vw; */
+    }
+}
