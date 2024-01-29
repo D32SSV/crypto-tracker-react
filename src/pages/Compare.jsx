@@ -84,7 +84,8 @@ function Compare() {
     <div>
       <Header />
       {isLoading ? (
-        <Loader />
+        // <Loader />
+        <h1>Api Failed</h1>
       ) : (
         <>
           <div className="innerDivComparePage">
