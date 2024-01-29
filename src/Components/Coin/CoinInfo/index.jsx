@@ -3,7 +3,7 @@ import "./style.css";
 
 function CoinInfo({ heading, desc }) {
   const shortDesc =
-    desc.slice(0, 207) +
+    desc.slice(0, 45) +
     "<span style='color:var(--blue)' > Read More...</span>";
   const fullDesc =
     desc + "<span style='color:var(--blue)' > Read Less</span>";

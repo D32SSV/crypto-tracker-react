@@ -1,0 +1,7 @@
+.outer_div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    margin: 0 1.5rem;
+}

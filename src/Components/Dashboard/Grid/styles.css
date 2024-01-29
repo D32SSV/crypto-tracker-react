@@ -49,6 +49,7 @@
 .name-col {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 0.5rem;
 }
 
@@ -107,4 +108,22 @@
   color: gray;
   font-weight: 500;
   font-size: 0.9rem;
+}
+
+.watchlist-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--green);
+  border-radius: 50%;
+  color: var(--green);
+  padding: 0.5rem;
+  height: 1.5rem;
+  width: 1.5rem !important;
+}
+.icon-flex {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }

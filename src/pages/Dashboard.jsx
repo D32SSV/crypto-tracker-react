@@ -6,6 +6,7 @@ import Search from "../Components/Dashboard/Search";
 import PaginationComponent from "../Components/Dashboard/Pagination";
 import Loader from "../Components/Common/Loader";
 import ScrollToTop from "../Components/Common/ScrollToTop";
+import { get100Coins } from "../functions/get100Coins";
 
 function DashboardPage() {
   const [coins, setCoins] = React.useState([]);
@@ -32,14 +33,20 @@ function DashboardPage() {
   );
 
   React.useEffect(() => {
-    setCoins(apidata);
-    setPaginatedCoins(apidata.slice(0, 10));
-    setIsLoading(false);
+    getData();
   }, []);
+  const getData = async () => {
+    const myCoins = await get100Coins();
+    if (myCoins) {
+      setCoins(myCoins);
+      setPaginatedCoins(myCoins.slice(0, 10));
+      setIsLoading(false);
+    }
+  };
   return (
     <>
       <Header />
-      <ScrollToTop/>
+      <ScrollToTop />
       {isLoading ? (
         <Loader />
       ) : (
