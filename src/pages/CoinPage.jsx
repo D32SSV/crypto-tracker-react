@@ -68,6 +68,7 @@ function CoinPage() {
       <Header />
       {isLoading ? (
         <Loader />
+        // <label>Api failed</label>
       ) : (
         <>
           <div className="coin_wrapper">

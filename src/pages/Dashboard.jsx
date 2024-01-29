@@ -48,7 +48,8 @@ function DashboardPage() {
       <Header />
       <ScrollToTop />
       {isLoading ? (
-        <Loader />
+        // <Loader />
+        <label>Api failed</label>
       ) : (
         <div>
           <Search search={search} onSearch={onSearch} />
